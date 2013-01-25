@@ -1,0 +1,1 @@
+A codebase I inherited at a new job. Trying to clean things up the best I can while staying on top of content modifications, additions, subtractions... you know how it is. Just a flat site, with a PHP script for contact forms that I inherited completely broken. It's still broken, in a lot of ways.
