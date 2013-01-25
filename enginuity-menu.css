@@ -1,0 +1,110 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+Copyright (c) 2005-2010 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+/* default styling */
+.nav, .nav ul {list-style-type:none; margin:0; padding:0;}
+.nav a {text-decoration:none;color:#ffffff; font-size:13px;}
+.nav {font-family: arial, sans-serif; width:100%; margin:2% 0 0 3%;}
+
+/* style the links */
+/* needs a background for IE6 - can be a color or a transparent gif */
+.nav a {background:#36353A; height:20px;text-align:center;} 
+.nav ul a {height:auto;text-align:left;}
+
+
+/* style the <b> element so that is does not affect the size of the link */
+.nav a b {display:block; border:1px solid #36353A; border-width:1px 0px 0 0px; background:#fff; color:#5D5D5F; font-size:13px; padding-left: 5px; font-weight:bold; cursor:pointer;} 
+.nav a b.last {border-bottom-width:1px;}
+
+
+/* WIDTH change this WITH CARE to suit your requirements */
+
+
+/* FOR NAV1 */
+.nav1, .nav1 a {width:85px;}
+.nav1 a {margin-right:-84px; } /* 1px less than the top level link width */
+.nav1 ul li {max-width:64px;}
+.nav1 ul li a {width:150px;}
+.nav1 a:hover,
+.nav1 a:focus,
+.nav1 a:active {background:#E41937; color:#ffffff;}
+
+/* FOR NAV2 */
+.nav2, .nav2 a {width:135px;}
+.nav2 a {margin-right:-134px; } /* 1px less than the top level link width */
+.nav2 ul li {max-width:164px;}
+.nav2 a:hover,
+.nav2 a:focus,
+.nav2 a:active {background:#E41937; color:#ffffff;}
+
+/* FOR NAV3 */
+.nav3, .nav3 a {width:100px;}
+.nav3 a {margin-right:-99px; } /* 1px less than the top level link width */
+.nav3 ul li {max-width:99px;}
+.nav3 a:hover,
+.nav3 a:focus,
+.nav3 a:active {background:#E41937; color:#ffffff;}
+
+/* FOR NAV3 */
+.nav4, .nav4 a {width:134px;}
+.nav4 a {margin-right:-103px;} /* 1px less than the top level link width */
+.nav4 ul li {max-width:103px;}
+.nav4 a:hover,
+.nav4 a:focus,
+.nav4 a:active {background:#E41937; color:#ffffff;}
+
+/* FOR NAV5 */
+.nav5, .nav5 a {width:100px;}
+.nav5 a {margin-right:-99px; } /* 1px less than the top level link width */
+.nav5 ul li {max-width:99px;}
+.nav5 a:hover,
+.nav5 a:focus,
+.nav5 a:active {background:#E41937; color:#ffffff;}
+
+/* FOR NAV6 */
+.nav6, .nav6 a {width:85px;}
+.nav6 a:hover,
+.nav6 a:focus,
+.nav6 a:active {background:#E41937; color:#ffffff;}
+
+/* FOR NAV7 */
+.nav7, .nav7 a {width:120px; background:#71BF49;height:20px;}
+.nav7 a:hover,
+.nav7 a:focus,
+.nav7 a:active {background:#36353A; color:#ffffff;}
+
+/* ----------------------------------------------------------------------------	*/
+
+/* DO NOT CHANGE ANYTHING BELOW */
+.nav li {float:left; z-index:100;} /* fixes several IE related bugs, and allows for clearing */
+.nav ul {float:left; position:relative; z-index:20; left:1px; top:-1px; z-index:100;} /* necessary for float drop and to stack the <ul>s */
+.nav ul li {clear:left;} /* must clear the floated list item inside sublist */
+.nav a {position:relative; display:block;} /* needs to have a position, to be above the rest */
+.nav a.main {float:left; /* necessary for float drop */
+    margin-top:10000px;} /* bring the top level links back into view */
+.nav .drop {margin-top:-10000px;} /* hide the sub links and their containers, opera has low upper limits */
+.nav ul {margin-bottom:-5000px;} /* avoid any interaction between the subs, can be any large size */
+/* ----------------------------------------------------------------------------	*/
+
+/* The bit that does ALL the work to bring the sub menus into view */
+.nav a:hover,
+.nav a:focus,
+.nav a:active {margin-right:0; z-index:10; outline:0; background-position:left bottom;}
+
+.nav a:hover b,
+.nav a:focus b,
+.nav a:active b {background:#f8f8f8;color:#E41937; width:auto;}
+
+/* OPERA fix */
+.nav ul:hover {clear:left;}  to stop intermittent sub link :hover problems 
+
+/* IE6 and 7 fix */
+a:active {}
+
+/* ----------------------------------------------------------------------------	*/
+
+
