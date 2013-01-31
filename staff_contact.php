@@ -108,8 +108,8 @@ switch ($_GET["staffname"])
   $staff_name = "Keith Hixenbaugh";
   break;  
   
-  case "kdundor":
-  $staff_name = "Karl Dundor";
+  case "kdundore":
+  $staff_name = "Karl Dundore";
   break;
   
   case "tamik":

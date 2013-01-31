@@ -105,8 +105,8 @@ switch ($_GET["staffname"])
   $email_to = "khixenbaugh@enginuity-llc.com";
   break;  
   
-  case "kdundor":
-  $email_to = "kdundor@enginuity-llc.com";
+  case "kdundore":
+  $email_to = "kdundore@enginuity-llc.com";
   break;
   
   case "tamik":
