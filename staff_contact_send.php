@@ -137,7 +137,7 @@ if(isset($_POST['email'])) {
     
 
     function died($error) {
-        // your error code can go here
+        // your error code can go here, and I might want to clean these up later on.
         echo "<br /><br /><p align=\"center\" class=\"eHelp\">We are very sorry, but there were error(s) found with the form you submitted. </p>";
         echo "<p align=\"center\" class=\"eHelp\">These errors appear below.<br /></p>";
         echo "<p align=\"center\" class=\"eHelp\">" . $error . "<br /></p>";
