@@ -125,6 +125,10 @@ switch ($_GET["staffname"])
   $email_to = "jmahonski@enginuity-llc.com";
   break;
   
+  case "kmalzi":
+  $email_to = "KMalzi@enginuity-llc.com";
+  break;
+  
 default:
   echo "An error has occured. Please contact our office at 717-796-9226. Thank You.";
 }
