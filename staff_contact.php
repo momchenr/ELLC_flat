@@ -132,6 +132,10 @@ switch ($_GET["staffname"])
   $staff_name = "Keith Malzi";
   break;
   
+  case "mikedunn":
+  $staff_name = "Mike Dunn";
+  break;
+  
 default:
   echo "<p align=\"center\" style=\"color:#fff\">An error has occured. Please contact our office at 717-796-9226. Thank You.</p>";
 }
